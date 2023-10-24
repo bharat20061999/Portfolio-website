@@ -135,7 +135,7 @@ const Skills = () => {
                 {
                   skills.skills.map((item) => (
                     <SkillItem>
-                    <SkillImage src = {item.imagegi}/>
+                    <SkillImage src = {item.image}/>
                     {item.name}</SkillItem>
                   ))
                 }
