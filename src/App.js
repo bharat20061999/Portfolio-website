@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import './App.css';
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from './utils/Themes';
