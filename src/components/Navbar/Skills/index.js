@@ -119,11 +119,12 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
+    <div id="skills">
     <Container>
       <Wrapper>
-        <SkillTitle>
+        <Title>
           Skills
-        </SkillTitle>
+        </Title>
         <Desc>
         Here are some of my skills on which I have been working on for the past 1.5 years.
         </Desc>
@@ -147,6 +148,7 @@ const Skills = () => {
         </SkillsContainer>
       </Wrapper>
     </Container>
+    </div>
   )
 }
 
