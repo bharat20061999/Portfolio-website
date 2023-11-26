@@ -230,7 +230,7 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton herf={Bio.resume} target="display"> Check Resume </ResumeButton>
+            <ResumeButton herf={Bio.resume} target="blank"> Check Resume </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
             <Image src={HeroImg} alt="Hero" />

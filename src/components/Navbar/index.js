@@ -4,6 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useTheme} from 'styled-components'
+import { Bio } from "../../data/constants";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -162,6 +163,11 @@ const MobileMenuLink = styled(LinkR)`
 `;
 
 const Navbar = () => {
+
+  const handleClick = () => {
+    window.open(Bio.github, '_blank'); 
+   }
+   
   const theme = useTheme;
   const [isOpen, setOpen] = React.useState(false);
   return (
@@ -196,7 +202,7 @@ const Navbar = () => {
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Github Profile</GithubButton>
+          <GithubButton onClick={handleClick}>Github Profile</GithubButton>
         </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
@@ -233,14 +239,13 @@ const Navbar = () => {
               Education
             </MobileMenuLink>
             <GithubButton
+            onClick={handleClick}
               style={{
                 padding: "10px 16px",
                 background: `${theme.primary}`,
                 color: "white",
                 width: "max-content",
               }}
-              href="/"
-              target="_blank"
             >
               Github Profile
             </GithubButton>

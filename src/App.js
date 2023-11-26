@@ -34,8 +34,7 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Router>
-      <Navbar>
-      </Navbar>
+      <Navbar/>
       <Body>
         <Wrapper>
           <HeroSection/>
