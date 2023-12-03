@@ -4,10 +4,11 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import Skills from './components/Navbar/Skills';
-import Education from './components/Navbar/Education';
+// import Education from './components/Navbar/Education';
 import { BrowserRouter as Router } from 'react-router-dom';
 import HeroSection from './components/Navbar/HeroSection';
 import Experience from './components/Navbar/Experience';
+import Projects from './components/Navbar/Projects';
 
 const Body = styled.div`
 background-color: ${({theme}) => theme.bg};
@@ -41,8 +42,8 @@ function App() {
           <HeroSection/>
           <Skills/>
           <Experience/>
-          <Education/>
         </Wrapper>
+        <Projects/>
       </Body>
       </Router>
     </ThemeProvider>
